@@ -1,0 +1,7 @@
+DESCRIPTION="Converts Netpbm code to GIMP plugin"
+HOMEPAGE="http://netpbm2gimp.sourceforge.net/"
+SRC_URI="mirror://sourceforge/netpbm2gimp/${P}.tar.gz"
+
+DISTCLEANFILES="netpbm2gimp"
+
+CPPFLAGS+=" -I/usr/include/netpbm"

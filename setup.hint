@@ -1,9 +1,0 @@
-category: Graphics
-requires: gcc4-core gimp2-devel libnetpbm-devel make perl
-sdesc: "Converts Netpbm code to GIMP plugin"
-ldesc: "Netpbm2Gimp makes it easy to write plug-ins for the GIMP, a 
-popular open-source bitmap-editing program.  Netpbm2Gimp hides all of 
-the GIMP and GTK+ features for user-interface manipulation behind 
-straightforward functions for reading and writing arrays of pixels. As 
-an added benefit, the same source code that Netpbm2Gimp converts to a 
-GIMP plug-in can also be compiled into a command-line graphics filter."

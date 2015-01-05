@@ -1,5 +1,5 @@
 NAME="netpbm2gimp"
-VERSION=1.5
+VERSION=1.6
 RELEASE=1
 CATEGORY="Graphics"
 SUMMARY="Converts Netpbm code to GIMP plugin"

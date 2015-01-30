@@ -1,0 +1,31 @@
+--- origsrc/netpbm2gimp-1.6/src/pm.c	2012-07-05 23:33:38.000000000 -0500
++++ src/netpbm2gimp-1.6/src/pm.c	2015-01-30 14:08:26.800415100 -0600
+@@ -934,3 +934,28 @@ pm_writechar (FILE *const ofP,
+ {
+   putc(c, ofP);
+ }
++
++void
++__overflow2 (int a, int b)
++{
++  if (a < 0 || b < 0)
++    pm_error("object too large");
++  if (b == 0)
++    return;
++  if (a > INT_MAX / b)
++    pm_error("object too large");
++}
++
++void overflow3(int a, int b, int c)
++{
++  __overflow2(a,b);
++  __overflow2(a*b, c);
++}
++
++void overflow_add(int a, int b)
++{
++   if (a > INT_MAX - b)
++     pm_error("object too large");
++}
++
++

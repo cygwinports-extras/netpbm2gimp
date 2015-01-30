@@ -11,6 +11,7 @@ same source code that Netpbm2Gimp converts to a GIMP plug-in can also be
 compiled into a command-line graphics filter."
 HOMEPAGE="http://netpbm2gimp.sourceforge.net/"
 SRC_URI="mirror://sourceforge/netpbm2gimp/${NAME}-${VERSION}.tar.gz"
+PATCH_URI="1.6-netpbm10_66.patch"
 
 REQUIRES="gimp-devel libnetpbm-devel make"
 
